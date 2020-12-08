@@ -22,11 +22,13 @@ dataid = "tetraploid_simarray"
 genofile = string(dataid,"_geno_disturbed.csv")
 pedfile = string(dataid,"_ped.csv")
 outstem = string(dataid,"_output")
+```
+plot crossdesign for the 5x5 diallel cross with 10 F1 populations of size 20.
+```julia
 polygeno = readPolyGeno(genofile, pedfile)
 PolyOrigin.plotdesign(polygeno)
 ```
-plot crossdesign for the 5x5 diallel cross with 10 F1 populations of size 20.
-
+run polyOrigin
 ```julia; results = "hidden"; eval=false
 @time polyancestry= polyOrigin(polygeno;
     refinemap=true,

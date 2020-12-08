@@ -96,8 +96,8 @@ acc=calAccuracy!(truegeno,polyancestry)
 ~~~~~~~~~~~~~
 
 ~~~~
-(ndoseerr = 11, nphaseerr = 11, nalleleerr = 11, nparentgeno = 600, assigne
-rr = 0.156757, callerr = 0.112042, delfraction = 0.0)
+(ndoseerr = 1, nphaseerr = 1, nalleleerr = 1, nparentgeno = 600, assignerr 
+= 0.103968, callerr = 0.071125, delfraction = 0.0)
 ~~~~
 
 

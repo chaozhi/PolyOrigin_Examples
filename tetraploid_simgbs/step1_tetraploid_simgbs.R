@@ -33,7 +33,7 @@ pedigreesimR(sim$map,sim$hap,
              sampleHap = FALSE,filename="",
              pedigree,workingfolder = getwd(),
              missingFreq=c(0.1,0.1),
-             GBS=TRUE,GBSavgdepth = 10,GBSseq = 0.001
+             GBS=TRUE,GBSavgdepth = 20,GBSseq = 0.001
 )
 # delete all pedsim*.* files. 
 sapply(list.files(pattern = "pedsim*"), unlink)

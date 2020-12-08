@@ -29,16 +29,21 @@ dataid = "tetraploid_simarray"
 genofile = string(dataid,"_geno_disturbed.csv")
 pedfile = string(dataid,"_ped.csv")
 outstem = string(dataid,"_output")
-polygeno = readPolyGeno(genofile, pedfile)
-PolyOrigin.plotdesign(polygeno)
 ~~~~~~~~~~~~~
-
-![](figures/step3_tetraploid_simarray_3_1.png)\ 
 
 
 
 plot crossdesign for the 5x5 diallel cross with 10 F1 populations of size 20.
+~~~~{.julia}
+polygeno = readPolyGeno(genofile, pedfile)
+PolyOrigin.plotdesign(polygeno)
+~~~~~~~~~~~~~
 
+![](figures/step3_tetraploid_simarray_4_1.png)\ 
+
+
+
+run polyOrigin
 ~~~~{.julia}
 @time polyancestry= polyOrigin(polygeno;
     refinemap=true,
@@ -132,7 +137,7 @@ Visualize haplotype probabilities of single offspring
 plotCondprob(polyancestry,truegeno=truegeno,offspring=1)
 ~~~~~~~~~~~~~
 
-![](figures/step3_tetraploid_simarray_9_1.png)\ 
+![](figures/step3_tetraploid_simarray_10_1.png)\ 
 
 
 
@@ -165,7 +170,7 @@ fig2 = plotMapComp(truegeno.truemap, polyancestry.markermap,
 plot(fig,fig2)
 ~~~~~~~~~~~~~
 
-![](figures/step3_tetraploid_simarray_11_1.png)\ 
+![](figures/step3_tetraploid_simarray_12_1.png)\ 
 
 
 
