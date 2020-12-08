@@ -8,7 +8,8 @@ using Weave
 # :pwd: Julia working directory,
 # "somepath": output directory as a String e.g "/home/mpastell/weaveout"
 # filename as string e.g. ~/outpath/outfile.tex.
-
+using PolyOrigin
+using Plots
 cd(@__DIR__)
 
 weave("step3_tetraploid_simarray.jmd", doctype = "md2html", out_path = :pwd)
