@@ -1,6 +1,6 @@
-# PolyOrigin Examples
+# Examples of using PolyOrigin.jl
 
-Examples of using PolyOrigin.jl at https://github.com/chaozhi/PolyOrigin.jl
+see PolyOrigin.jl at https://github.com/chaozhi/PolyOrigin.jl
 
 [Haplotype reconstruction in a simulated tetraploid multi-parental population from SNP array data](https://github.com/chaozhi/PolyOrigin_Examples/tree/master/tetraploid_simarray/step3_tetraploid_simarray.md)
 
