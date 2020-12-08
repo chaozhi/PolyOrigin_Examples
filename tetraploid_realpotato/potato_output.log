@@ -1,0 +1,304 @@
+Julia version: 1.5.3
+Status `C:\Users\zheng026\.julia\environments\v1.5\Project.toml`
+  [16de7d52] PolyOrigin v0.5.0 `https://github.com/chaozhi/PolyOrigin.jl#main`
+=================================polyOrigin=================================
+PolyOrigin, polyOrigin, logfile=potato_output.log, 2020-12-08T11:49:05.845
+list of input files: 
+genofile = TableS2_dose.csv
+pedfile = TableS3_ped.csv
+file input/output options: 
+delimchar = ,
+missingstring = NA
+commentstring = #
+----------------------------------phasing-----------------------------------
+PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>), 2020-12-08T11:49:07.308
+list of option values: 
+epsilon = 0.01
+seqerr = 0.001
+chrpairing_phase = 22
+byparent = true for simple biparental cross
+byneighbor = true for max(ploidy) >= 6
+chrsubset = 1:4
+snpsubset = 1:5:996
+isparallel = true
+delmarker = true
+delsiglevel = 0.05
+maxstuck = 5
+maxiter = 30
+minrun = 3
+maxrun = 10
+refhapfile = nothing
+missingstring = NA
+outstem = potato_output
+logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>)
+workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato
+verbose = true
+data: #pop=3, #parent=3, #offspring=434, #chr=12, #marker=5078
+phasing connected parents: W6511-1R, VillettaRose, W9914-1R
+#chr=1, procs=2, run=1, it=1, logl=-49833.16, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=1, it=2, logl=-33185.33, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=1, it=3, logl=-30114.06, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=1, it=4, logl=-28740.39, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=1, it=5, logl=-28740.39, epsilon=0.01, nstuck=1, ndel=0
+#chr=1, procs=2, run=1, it=6, logl=-25877.95, epsilon=0.0431, nstuck=0, ndel=3
+#chr=1, procs=2, run=1, it=7, logl=-25866.66, epsilon=0.0431, nstuck=0, ndel=3
+#chr=1, procs=2, run=1, it=8, logl=-25865.33, epsilon=0.0431, nstuck=0, ndel=3
+#chr=1, procs=2, run=1, it=9, logl=-25865.33, epsilon=0.0431, nstuck=1, ndel=3
+#chr=1, procs=2, run=1, it=10, logl=-25865.33, epsilon=0.0431, nstuck=3, ndel=3
+#chr=1, procs=2, run=1, it=11, logl=-25865.33, epsilon=0.0431, nstuck=4, ndel=3
+#chr=1, procs=2, run=1, it=12, logl=-25865.33, epsilon=0.0431, nstuck=5, ndel=3
+#chr=1, procs=2, run=2, it=1, logl=-49910.61, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=2, logl=-32852.75, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=3, logl=-28463.92, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=4, logl=-27616.71, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=5, logl=-27567.96, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=6, logl=-27546.6, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=2, it=7, logl=-27546.6, epsilon=0.01, nstuck=5, ndel=0
+#chr=1, procs=2, run=3, it=1, logl=-49997.05, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=3, it=2, logl=-31900.39, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=3, it=3, logl=-29207.68, epsilon=0.01, nstuck=0, ndel=0
+#chr=1, procs=2, run=3, it=4, logl=-29207.68, epsilon=0.01, nstuck=1, ndel=0
+#chr=1, procs=2, run=3, it=5, logl=-25537.76, epsilon=0.0401, nstuck=0, ndel=2
+#chr=1, procs=2, run=3, it=6, logl=-25532.34, epsilon=0.0401, nstuck=0, ndel=2
+#chr=1, procs=2, run=3, it=7, logl=-25532.34, epsilon=0.0401, nstuck=1, ndel=2
+#chr=1, procs=2, run=3, it=8, logl=-25532.34, epsilon=0.0401, nstuck=2, ndel=2
+#chr=1, procs=2, run=3, it=9, logl=-25532.34, epsilon=0.0401, nstuck=3, ndel=2
+#chr=1, procs=2, run=3, it=10, logl=-25532.34, epsilon=0.0401, nstuck=4, ndel=2
+#chr=1, procs=2, run=3, it=11, logl=-25529.97, epsilon=0.0401, nstuck=0, ndel=2
+#chr=1, procs=2, run=3, it=12, logl=-25529.97, epsilon=0.0401, nstuck=1, ndel=2
+#chr=1, procs=2, run=3, it=13, logl=-25529.97, epsilon=0.0401, nstuck=2, ndel=2
+#chr=1, procs=2, run=3, it=14, logl=-25529.97, epsilon=0.0401, nstuck=3, ndel=2
+#chr=1, procs=2, run=3, it=15, logl=-25529.97, epsilon=0.0401, nstuck=4, ndel=2
+#chr=1, procs=2, run=3, it=16, logl=-25529.97, epsilon=0.0401, nstuck=5, ndel=2
+#chr=1, procs=2, #marker=144, done, elapsed=483.0 seconds, #mismatch(run3 ~ runs) = [0, 0, 0]
+#chr=2, procs=3, run=1, it=1, logl=-35048.1, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=1, it=2, logl=-19284.16, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=1, it=3, logl=-17470.5, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=1, it=4, logl=-17012.52, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=1, it=5, logl=-16381.43, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=1, it=6, logl=-16381.43, epsilon=0.01, nstuck=5, ndel=0
+#chr=2, procs=3, run=2, it=1, logl=-37211.11, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=2, it=2, logl=-20191.19, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=2, it=3, logl=-16757.83, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=2, it=4, logl=-16381.43, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=2, it=5, logl=-16381.43, epsilon=0.01, nstuck=5, ndel=0
+#chr=2, procs=3, run=3, it=1, logl=-38359.47, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=3, it=2, logl=-21494.61, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=3, it=3, logl=-16381.43, epsilon=0.01, nstuck=0, ndel=0
+#chr=2, procs=3, run=3, it=4, logl=-16381.43, epsilon=0.01, nstuck=5, ndel=0
+#chr=2, procs=3, #marker=103, done, elapsed=205.0 seconds, #mismatch(run1 ~ runs) = [0, 0, 0]
+#chr=3, procs=5, run=1, it=1, logl=-39912.77, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=1, it=2, logl=-23152.49, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=1, it=3, logl=-18692.45, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=1, it=4, logl=-18692.45, epsilon=0.01, nstuck=1, ndel=0
+#chr=3, procs=5, run=1, it=5, logl=-17510.62, epsilon=0.031, nstuck=0, ndel=3
+#chr=3, procs=5, run=1, it=6, logl=-17510.62, epsilon=0.031, nstuck=1, ndel=3
+#chr=3, procs=5, run=1, it=7, logl=-17510.62, epsilon=0.031, nstuck=2, ndel=3
+#chr=3, procs=5, run=1, it=8, logl=-17510.62, epsilon=0.031, nstuck=3, ndel=3
+#chr=3, procs=5, run=1, it=9, logl=-17510.62, epsilon=0.031, nstuck=4, ndel=3
+#chr=3, procs=5, run=1, it=10, logl=-17510.62, epsilon=0.031, nstuck=5, ndel=3
+#chr=3, procs=5, run=2, it=1, logl=-29929.92, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=2, it=2, logl=-18968.08, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=2, it=3, logl=-18947.83, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=2, it=4, logl=-18711.43, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=2, it=5, logl=-17807.3, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=2, it=6, logl=-17807.3, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=3, it=1, logl=-38259.16, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=3, it=2, logl=-25174.7, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=3, it=3, logl=-18707.78, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=3, it=4, logl=-18626.99, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=3, it=5, logl=-18626.99, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=4, it=1, logl=-33665.64, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=4, it=2, logl=-24804.25, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=4, it=3, logl=-21201.05, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=4, it=4, logl=-19102.29, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=4, it=5, logl=-19102.29, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=5, it=1, logl=-38483.94, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=5, it=2, logl=-22432.18, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=5, it=3, logl=-21312.45, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=5, it=4, logl=-17807.3, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=5, it=5, logl=-17807.3, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=6, it=1, logl=-30447.14, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=6, it=2, logl=-23262.39, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=6, it=3, logl=-20857.86, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=6, it=4, logl=-20764.56, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=6, it=5, logl=-20764.56, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=7, it=1, logl=-36296.81, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=7, it=2, logl=-26627.66, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=7, it=3, logl=-18842.34, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=7, it=4, logl=-17585.96, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=7, it=5, logl=-17585.96, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, run=8, it=1, logl=-37002.34, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=8, it=2, logl=-21859.01, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=8, it=3, logl=-20353.93, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=8, it=4, logl=-19671.52, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=8, it=5, logl=-17645.5, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=8, it=6, logl=-17645.5, epsilon=0.01, nstuck=1, ndel=0
+#chr=3, procs=5, run=8, it=7, logl=-17151.23, epsilon=0.0269, nstuck=0, ndel=1
+#chr=3, procs=5, run=8, it=8, logl=-17145.94, epsilon=0.0269, nstuck=0, ndel=1
+#chr=3, procs=5, run=8, it=9, logl=-17145.94, epsilon=0.0269, nstuck=1, ndel=1
+#chr=3, procs=5, run=8, it=10, logl=-17145.94, epsilon=0.0269, nstuck=2, ndel=1
+#chr=3, procs=5, run=8, it=11, logl=-17145.94, epsilon=0.0269, nstuck=3, ndel=1
+#chr=3, procs=5, run=8, it=12, logl=-17145.94, epsilon=0.0269, nstuck=4, ndel=1
+#chr=3, procs=5, run=8, it=13, logl=-17145.94, epsilon=0.0269, nstuck=5, ndel=1
+#chr=3, procs=5, run=9, it=1, logl=-34233.15, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=9, it=2, logl=-21118.56, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=9, it=3, logl=-21118.56, epsilon=0.01, nstuck=1, ndel=0
+#chr=3, procs=5, run=9, it=4, logl=-17727.11, epsilon=0.0359, nstuck=0, ndel=2
+#chr=3, procs=5, run=9, it=5, logl=-17714.4, epsilon=0.0359, nstuck=0, ndel=2
+#chr=3, procs=5, run=9, it=6, logl=-17694.07, epsilon=0.0359, nstuck=0, ndel=2
+#chr=3, procs=5, run=9, it=7, logl=-17694.07, epsilon=0.0359, nstuck=2, ndel=2
+#chr=3, procs=5, run=9, it=8, logl=-17694.07, epsilon=0.0359, nstuck=4, ndel=2
+#chr=3, procs=5, run=9, it=9, logl=-17694.07, epsilon=0.0359, nstuck=5, ndel=2
+#chr=3, procs=5, run=10, it=1, logl=-29178.03, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=10, it=2, logl=-25598.77, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=10, it=3, logl=-23419.29, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=10, it=4, logl=-19678.52, epsilon=0.01, nstuck=0, ndel=0
+#chr=3, procs=5, run=10, it=5, logl=-19678.52, epsilon=0.01, nstuck=5, ndel=0
+#chr=3, procs=5, #marker=105, done, elapsed=613.0 seconds, #mismatch(run8 ~ runs) = [11, 31, 14, 17, 31, 27, 12, 0, 11, 23]
+#chr=4, procs=4, run=1, it=1, logl=-29174.73, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=1, it=2, logl=-16326.62, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=1, it=3, logl=-16209.77, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=1, it=4, logl=-16209.77, epsilon=0.01, nstuck=1, ndel=0
+#chr=4, procs=4, run=1, it=5, logl=-15315.61, epsilon=0.0282, nstuck=0, ndel=1
+#chr=4, procs=4, run=1, it=6, logl=-15315.61, epsilon=0.0282, nstuck=1, ndel=1
+#chr=4, procs=4, run=1, it=7, logl=-15315.61, epsilon=0.0282, nstuck=2, ndel=1
+#chr=4, procs=4, run=1, it=8, logl=-15315.61, epsilon=0.0282, nstuck=3, ndel=1
+#chr=4, procs=4, run=1, it=9, logl=-15315.61, epsilon=0.0282, nstuck=4, ndel=1
+#chr=4, procs=4, run=1, it=10, logl=-15315.61, epsilon=0.0282, nstuck=5, ndel=1
+#chr=4, procs=4, run=2, it=1, logl=-25268.16, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=2, it=2, logl=-15839.72, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=2, it=3, logl=-15839.72, epsilon=0.01, nstuck=5, ndel=0
+#chr=4, procs=4, run=3, it=1, logl=-31562.09, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=3, it=2, logl=-19735.22, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=3, it=3, logl=-17405.76, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=3, it=4, logl=-14995.71, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=3, it=5, logl=-14995.71, epsilon=0.01, nstuck=5, ndel=0
+#chr=4, procs=4, run=4, it=1, logl=-32189.33, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=4, it=2, logl=-18934.97, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=4, it=3, logl=-17672.15, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=4, it=4, logl=-16376.18, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=4, it=5, logl=-16371.19, epsilon=0.01, nstuck=0, ndel=0
+#chr=4, procs=4, run=4, it=6, logl=-16371.19, epsilon=0.01, nstuck=1, ndel=0
+#chr=4, procs=4, run=4, it=7, logl=-15322.23, epsilon=0.0297, nstuck=0, ndel=1
+#chr=4, procs=4, run=4, it=8, logl=-15322.23, epsilon=0.0297, nstuck=1, ndel=1
+#chr=4, procs=4, run=4, it=9, logl=-15322.23, epsilon=0.0297, nstuck=2, ndel=1
+#chr=4, procs=4, run=4, it=10, logl=-15322.23, epsilon=0.0297, nstuck=3, ndel=1
+#chr=4, procs=4, run=4, it=11, logl=-15322.23, epsilon=0.0297, nstuck=4, ndel=1
+#chr=4, procs=4, run=4, it=12, logl=-15322.23, epsilon=0.0297, nstuck=5, ndel=1
+#chr=4, procs=4, #marker=93, done, elapsed=343.0 seconds, #mismatch(run3 ~ runs) = [0, 4, 0, 0]
+delete 3 markers: solcap_snp_c2_20273, solcap_snp_c2_32334, solcap_snp_c2_54581
+parentphased file: potato_output_parentphased.csv
+End, 2020-12-08T11:59:36.692, time elapsed = 629.0 seconds by polyPhase
+--------------------------------maprefinning--------------------------------
+PolyOrigin, polyReconstruct!, 2020-12-08T11:59:36.751
+list of option values: 
+epsilon = 0.01
+seqerr = 0.001
+chrpairing = 44
+chrsubset = all chromosomes
+snpsubset = all markers
+isparallel = true
+correctthreshold = 0.15
+missingstring = NA
+outstem = not save to files
+logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>)
+workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato
+verbose = true
+#chr=1, procs=3, it=1, <eps>=0.0259, no_error_correction
+#chr=2, procs=4, it=1, <eps>=0.0197, no_error_correction
+#chr=3, procs=2, it=1, <eps>=0.0249, no_error_correction
+#chr=4, procs=5, it=1, <eps>=0.02, no_error_correction
+End, 2020-12-08T12:01:10.016, time elapsed = 93.0 seconds by polyReconstruct!
+PolyOrigin, polyMapRefine, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>), 2020-12-08T12:01:10.017
+list of option values: 
+epsilon = 0.01
+chrpairing = 44
+chrsubset = all chromosomes
+snpsubset = all markers
+isparallel = true
+maxwinsize = 50
+inittemperature = 4
+coolingrate = 0.5
+stripdis = 20
+maxepsilon = 0.5
+skeletonsize = 50
+outstem = potato_output
+logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>)
+workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato
+verbose = true
+no offspring excluded
+#chr=1, procs=5, it=1, logl=-18608.4, len=231.0, ndel=0, <eps>=0.0222
+#chr=1, procs=5, it=2, logl=-18027.2, len=154.0, ndel=0, <eps>=0.0243
+#chr=1, procs=5, it=3, logl=-18050.1, len=165.0, ndel=0, <eps>=0.0241
+#chr=1, procs=5, it=4, logl=-18047.4, len=163.0, ndel=0
+#chr=1, procs=5, it=5, logl=-18047.0, len=163.5, ndel=0
+#chr=1, procs=5, it=1, logl=-9375.4, len=139.8, skeleton=50, <eps>=0.0152
+#chr=1, procs=5, it=2, logl=-9390.4, len=146.3, skeleton=50, <eps>=0.0166
+#chr=1, procs=5, it=3, logl=-9387.2, len=145.2, skeleton=50, <eps>=0.0162
+#chr=1, procs=5, it=4, logl=-9387.5, len=145.1, skeleton=50, <eps>=0.0163
+#chr=1, procs=5, it=5, logl=-9387.4, len=145.2, skeleton=50, <eps>=0.0163
+#chr=1, procs=5, done, elapsed=223.0seconds, len=145.2cM, #marker=142
+#chr=2, procs=4, it=1, logl=-12467.1, len=156.1, ndel=0, <eps>=0.0167
+#chr=2, procs=4, it=2, logl=-12163.8, len=106.0, ndel=0, <eps>=0.0182
+#chr=2, procs=4, it=3, logl=-12175.2, len=115.2, ndel=0, <eps>=0.0181
+#chr=2, procs=4, it=4, logl=-12175.5, len=113.5, ndel=0
+#chr=2, procs=4, it=5, logl=-12175.4, len=113.8, ndel=0
+#chr=2, procs=4, it=1, logl=-8104.9, len=103.8, skeleton=50, <eps>=0.0145
+#chr=2, procs=4, it=2, logl=-8103.2, len=105.6, skeleton=50, <eps>=0.0146
+#chr=2, procs=4, it=3, logl=-8103.7, len=105.0, skeleton=50, <eps>=0.0147
+#chr=2, procs=4, it=4, logl=-8103.9, len=105.4, skeleton=50, <eps>=0.0147
+#chr=2, procs=4, it=5, logl=-8103.7, len=105.3, skeleton=50, <eps>=0.0146
+#chr=2, procs=4, done, elapsed=168.0seconds, len=105.3cM, #marker=103
+#chr=3, procs=2, it=1, logl=-13894.0, len=182.0, ndel=0, <eps>=0.0214
+#chr=3, procs=2, it=2, logl=-13495.2, len=125.6, ndel=0, <eps>=0.0231
+#chr=3, procs=2, it=3, logl=-13500.5, len=133.4, ndel=0, <eps>=0.023
+#chr=3, procs=2, it=4, logl=-13500.9, len=131.4, ndel=0
+#chr=3, procs=2, it=5, logl=-13500.8, len=132.0, ndel=0
+#chr=3, procs=2, it=1, logl=-9243.3, len=123.7, skeleton=50, <eps>=0.0197
+#chr=3, procs=2, it=2, logl=-9236.5, len=125.9, skeleton=50, <eps>=0.0195
+#chr=3, procs=2, it=3, logl=-9235.1, len=125.5, skeleton=50, <eps>=0.0195
+#chr=3, procs=2, it=4, logl=-9235.0, len=125.6, skeleton=50, <eps>=0.0195
+#chr=3, procs=2, it=5, logl=-9234.4, len=125.7, skeleton=50, <eps>=0.0194
+#chr=3, procs=2, done, elapsed=163.0seconds, len=125.7cM, #marker=104
+#chr=4, procs=3, it=1, logl=-11942.1, len=165.9, ndel=0, <eps>=0.0167
+#chr=4, procs=3, it=2, logl=-11693.8, len=123.0, ndel=0, <eps>=0.0185
+#chr=4, procs=3, it=3, logl=-11717.7, len=129.8, ndel=0, <eps>=0.0184
+#chr=4, procs=3, it=4, logl=-11715.4, len=128.4, ndel=0
+#chr=4, procs=3, it=5, logl=-11715.3, len=128.8, ndel=0
+#chr=4, procs=3, it=1, logl=-8106.8, len=119.3, skeleton=50, <eps>=0.0143
+#chr=4, procs=3, it=2, logl=-8108.9, len=121.4, skeleton=50, <eps>=0.0148
+#chr=4, procs=3, it=3, logl=-8108.2, len=120.6, skeleton=50, <eps>=0.0147
+#chr=4, procs=3, it=4, logl=-8106.8, len=120.9, skeleton=50, <eps>=0.0146
+#chr=4, procs=3, it=5, logl=-8106.7, len=121.0, skeleton=50, <eps>=0.0146
+#chr=4, procs=3, done, elapsed=150.0seconds, len=121.0cM, #marker=93
+maprefined file: potato_output_maprefined.csv
+Kendall tau between inputmap and refinedmap = [1.0, 1.0, 1.0, 1.0]
+End, 2020-12-08T12:05:01.175, time used = 231.0 seconds by polyMapRefine
+-------------------------------reconstructing-------------------------------
+PolyOrigin, polyReconstruct!, 2020-12-08T12:05:01.177
+list of option values: 
+epsilon = 0.01
+seqerr = 0.001
+chrpairing = 44
+chrsubset = all chromosomes
+snpsubset = all markers
+isparallel = true
+correctthreshold = 0.15
+missingstring = NA
+outstem = potato_output
+logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato\potato_output.log>)
+workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_realpotato
+verbose = true
+#chr=1, procs=3, it=1, <eps>=0.0247, no_error_correction
+#chr=2, procs=2, it=1, <eps>=0.0184, no_error_correction
+#chr=3, procs=4, it=1, <eps>=0.0231, no_error_correction
+#chr=4, procs=5, it=1, <eps>=0.0191, no_error_correction
+2 outlier offspring: W15268-67R, W15267-38R
+polyancestry file: potato_output_polyancestry.csv
+genoprob file: potato_output_genoprob.csv, a concise polyancestry file
+postdoseprob file: potato_output_postdoseprob.csv
+End, 2020-12-08T12:06:02.038, time elapsed = 61.0 seconds by polyReconstruct!
+----------------------------------------------------------------------------
+End, 2020-12-08T12:06:02.039, total time used = 1016.0 seconds by polyOrigin
+============================================================================
