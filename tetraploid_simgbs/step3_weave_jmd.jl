@@ -9,6 +9,8 @@ using Weave
 # "somepath": output directory as a String e.g "/home/mpastell/weaveout"
 # filename as string e.g. ~/outpath/outfile.tex.
 using PolyOrigin
+using CSV, DataFrames
+
 cd(@__DIR__)
 
 weave("step2_tetraploid_simgbs.jmd", doctype = "md2html", out_path = :pwd)

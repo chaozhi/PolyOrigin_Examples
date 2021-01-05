@@ -13,6 +13,11 @@ outstem = "example_output"
     outstem,
 )
 
+# plot relative frequencies of valent configurations
+polyancestry = readPolyAncestry(outstem*"_polyancestry.csv")
+valentfreq = calvalentfreq(polyancestry)
+plotvalentfreq(valentfreq)
+
 # calculate the accuracy of parental phasing and ancestral inference
 truefile = "true.csv"
 truegeno = readTruegeno!(truefile, polyancestry)

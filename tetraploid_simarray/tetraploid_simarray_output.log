@@ -1,9 +1,17 @@
+Julia version: 1.5.3
 Status `C:\Users\zheng026\.julia\environments\v1.5\Project.toml`
-  [16de7d52] PolyOrigin v0.5.0 `https://github.com/chaozhi/PolyOrigin.jl#main`
+  [16de7d52] PolyOrigin v0.5.3 `https://github.com/chaozhi/PolyOrigin.jl#main`
 =================================polyOrigin=================================
-PolyOrigin, polyOrigin, logfile=tetraploid_simarray_output.log, 2020-12-08T12:36:39.448
+PolyOrigin, polyOrigin, logfile=tetraploid_simarray_output.log, 2021-01-05T19:59:44.039
+list of input files: 
+genofile = tetraploid_simarray_geno_disturbed.csv
+pedfile = tetraploid_simarray_ped.csv
+file input/output options: 
+delimchar = ,
+missingstring = NA
+commentstring = #
 ----------------------------------phasing-----------------------------------
-PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray\tetraploid_simarray_output.log>), 2020-12-08T12:36:39.629
+PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray\tetraploid_simarray_output.log>), 2021-01-05T19:59:49.128
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -27,23 +35,27 @@ workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Exa
 verbose = true
 data: #pop=10, #parent=5, #offspring=200, #chr=1, #marker=200
 phasing connected parents: A, B, C, D, E
-#chr=A, run=1, it=1, logl=-43419.76, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=2, logl=-15765.79, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=3, logl=-15328.91, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=4, logl=-15328.91, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=2, it=1, logl=-41619.72, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=2, logl=-17537.83, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=3, logl=-15328.91, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=4, logl=-15328.91, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=3, it=1, logl=-39649.56, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=2, logl=-15698.23, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=1, logl=-45727.59, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=2, logl=-18022.69, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=3, logl=-15485.69, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=4, logl=-15328.91, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=5, logl=-15328.91, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=1, it=6, logl=-14053.73, epsilon=0.051, nstuck=0, ndel=0
+#chr=A, run=1, it=7, logl=-14053.73, epsilon=0.051, nstuck=5, ndel=0
+#chr=A, run=2, it=1, logl=-40464.64, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=2, logl=-15701.42, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=3, logl=-15485.69, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=4, logl=-15328.91, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=5, logl=-15328.91, epsilon=0.01, nstuck=5, ndel=0
+#chr=A, run=3, it=1, logl=-37530.61, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=2, logl=-16988.04, epsilon=0.01, nstuck=0, ndel=0
 #chr=A, run=3, it=3, logl=-15328.91, epsilon=0.01, nstuck=0, ndel=0
 #chr=A, run=3, it=4, logl=-15328.91, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, #marker=200, done, elapsed=161.0 seconds, #mismatch(run1 ~ runs) = [0, 0, 0]
+#chr=A, #marker=200, done, elapsed=181.0 seconds, #mismatch(run1 ~ runs) = [0, 0, 0]
 parentphased file: tetraploid_simarray_output_parentphased.csv
-End, 2020-12-08T12:39:25.091, time elapsed = 165.0 seconds by polyPhase
+End, 2021-01-05T20:02:54.778, time elapsed = 186.0 seconds by polyPhase
 --------------------------------maprefinning--------------------------------
-PolyOrigin, polyReconstruct!, 2020-12-08T12:39:25.179
+PolyOrigin, polyReconstruct!, 2021-01-05T20:02:54.871
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -59,8 +71,8 @@ workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Exa
 verbose = true
 #chr=A, it=1, <eps>=0.0539, #dose_diff=7, #phase_diff=7, #error_diff=223.0
 #chr=A, it=2, <eps>=0.0473, no_error_correction
-End, 2020-12-08T12:41:05.651, time elapsed = 101.0 seconds by polyReconstruct!
-PolyOrigin, polyMapRefine, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray\tetraploid_simarray_output.log>), 2020-12-08T12:41:05.792
+End, 2021-01-05T20:04:25.535, time elapsed = 91.0 seconds by polyReconstruct!
+PolyOrigin, polyMapRefine, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray\tetraploid_simarray_output.log>), 2021-01-05T20:04:25.602
 list of option values: 
 epsilon = 0.01
 chrpairing = 44
@@ -78,27 +90,25 @@ logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid
 workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray
 verbose = true
 no offspring excluded
-#chr=A, it=1, logl=-9309.6, len=118.6, ndel=0, <eps>=0.0258, win=14, T=4.0
-#chr=A, it=2, logl=-7838.7, len=99.0, ndel=0, <eps>=0.0188, win=7, T=2.0
-#chr=A, it=3, logl=-7172.7, len=101.2, ndel=0, <eps>=0.0153, win=5, T=1.0
-#chr=A, it=4, logl=-6970.2, len=95.8, ndel=0, <eps>=0.0145, win=4, T=0.5
-#chr=A, it=5, logl=-6846.1, len=97.0, ndel=0, <eps>=0.0134, win=5, T=0.25
-#chr=A, it=6, logl=-6790.4, len=96.5, ndel=0, <eps>=0.0131, win=3, T=0.125
-#chr=A, it=7, logl=-6766.0, len=96.0, ndel=0, <eps>=0.0131, win=3, T=0.0625
-#chr=A, it=8, logl=-6748.0, len=96.9, ndel=0, <eps>=0.0133, win=2, T=0.0312
-#chr=A, it=9, logl=-6748.7, len=96.6, ndel=0
-#chr=A, it=10, logl=-6748.3, len=96.8, ndel=0
-#chr=A, it=1, logl=-3465.1, len=91.1, skeleton=50, <eps>=0.0143
-#chr=A, it=2, logl=-3470.4, len=92.3, skeleton=50, <eps>=0.0152
-#chr=A, it=3, logl=-3474.4, len=92.5, skeleton=50, <eps>=0.0157
-#chr=A, it=4, logl=-3474.9, len=92.4, skeleton=50, <eps>=0.0158
-#chr=A, it=5, logl=-3474.6, len=92.4, skeleton=50, <eps>=0.0157
-#chr=A, done, elapsed=283.0seconds, len=92.4cM, #marker=200
+#chr=A, it=1, logl=-8770.2, len=119.2, ndel=0, <eps>=0.023, win=16, T=4.0
+#chr=A, it=2, logl=-7546.4, len=97.6, ndel=0, <eps>=0.0165, win=8, T=2.0
+#chr=A, it=3, logl=-7158.6, len=103.9, ndel=0, <eps>=0.0151, win=6, T=1.0
+#chr=A, it=4, logl=-7017.4, len=100.0, ndel=0, <eps>=0.0148, win=5, T=0.5
+#chr=A, it=5, logl=-6956.4, len=100.1, ndel=0, <eps>=0.0139, win=4, T=0.25
+#chr=A, it=6, logl=-6879.9, len=102.3, ndel=0, <eps>=0.0134, win=2, T=0.125
+#chr=A, it=7, logl=-6858.0, len=99.8, ndel=0
+#chr=A, it=8, logl=-6854.8, len=100.2, ndel=0
+#chr=A, it=1, logl=-3447.3, len=89.8, skeleton=50, <eps>=0.014
+#chr=A, it=2, logl=-3448.9, len=89.7, skeleton=50, <eps>=0.0151
+#chr=A, it=3, logl=-3449.0, len=90.3, skeleton=50, <eps>=0.0151
+#chr=A, it=4, logl=-3449.5, len=90.2, skeleton=50, <eps>=0.0152
+#chr=A, it=5, logl=-3450.0, len=90.2, skeleton=50, <eps>=0.0153
+#chr=A, done, elapsed=236.0seconds, len=90.2cM, #marker=200
 maprefined file: tetraploid_simarray_output_maprefined.csv
-Kendall tau between inputmap and refinedmap = [0.9031]
-End, 2020-12-08T12:45:51.881, time used = 286.0 seconds by polyMapRefine
+Kendall tau between inputmap and refinedmap = [0.9021]
+End, 2021-01-05T20:08:25.79, time used = 240.0 seconds by polyMapRefine
 -------------------------------reconstructing-------------------------------
-PolyOrigin, polyReconstruct!, 2020-12-08T12:45:51.883
+PolyOrigin, polyReconstruct!, 2021-01-05T20:08:25.791
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -112,13 +122,13 @@ outstem = tetraploid_simarray_output
 logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray\tetraploid_simarray_output.log>)
 workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simarray
 verbose = true
-#chr=A, it=1, <eps>=0.0147, no_error_correction
+#chr=A, it=1, <eps>=0.0146, no_error_correction
 no outlier offspring
 parentcorrected file: tetraploid_simarray_output_parentphased_corrected.csv
 polyancestry file: tetraploid_simarray_output_polyancestry.csv
 genoprob file: tetraploid_simarray_output_genoprob.csv, a concise polyancestry file
 postdoseprob file: tetraploid_simarray_output_postdoseprob.csv
-End, 2020-12-08T12:46:31.831, time elapsed = 40.0 seconds by polyReconstruct!
+End, 2021-01-05T20:09:02.997, time elapsed = 37.0 seconds by polyReconstruct!
 ----------------------------------------------------------------------------
-End, 2020-12-08T12:46:31.833, total time used = 592.0 seconds by polyOrigin
+End, 2021-01-05T20:09:02.999, total time used = 559.0 seconds by polyOrigin
 ============================================================================

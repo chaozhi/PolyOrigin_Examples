@@ -10,6 +10,7 @@ using Weave
 # filename as string e.g. ~/outpath/outfile.tex.
 using PolyOrigin
 using Plots
+using CSV, DataFrames
 cd(@__DIR__)
 
 weave("step3_tetraploid_simarray.jmd", doctype = "md2html", out_path = :pwd)

@@ -10,13 +10,14 @@ Non-parallel computation for simulated data with one linkage group
 using PolyOrigin
 ```
 
-# Run polyOrigin
+# Input files
 
+Set working directory to the direcotry of this file.
 ```julia; results = "hidden"
 cd(@__DIR__)
 ```
-Set working directory to the direcotry of this file.
 
+Set input files and outstem
 ```julia; results = "hidden"
 dataid = "tetraploid_simgbs"
 genofile = string(dataid,"_geno.csv")
@@ -24,22 +25,94 @@ pedfile = string(dataid,"_ped.csv")
 outstem = string(dataid,"_output")
 ```
 
+Check input files. In the pedfile, the parents of founders are set to 0.
+```julia
+using CSV, DataFrames
+show(CSV.read(pedfile,DataFrame)[1:8,:],eltypes=false)
+```
+In the genofile, columns 1-3 denote the marker map, and rest
+columns for the read counts of parents and offspring.
+```julia
+show(CSV.read(genofile,DataFrame)[1:5,1:6],eltypes=false)
+```
+
+plot crossdesign for the 5x5 diallel cross.
+```julia
+polygeno = readPolyGeno(genofile, pedfile)
+PolyOrigin.plotdesign(polygeno)
+```
+
+# Run polyOrigin
+
+run polyOrigin
 ```julia; results = "hidden"; eval=false
 @time polyancestry= polyOrigin(genofile, pedfile; outstem)
 ```
-Keyargs `refinemap` and `refineorder` specify to refine inter-marker distances
-and local marker ordering. `outstem` specifies the stem of output files.
+Keyarg `outstem` specifies the stem of output files.
 
 The returned polyancestry from polyOrigin has been saved.
+```julia; results = "hidden"; echo = false
+rm(outstem*"_condprob.gif",force=true)
+```
 ```julia
 outfiles = filter(x->occursin(outstem,x), readdir())
 ```
 [Click to view log file](tetraploid_simgbs_output.log)
 
-We can read polyancestry back
-```julia; results = "hidden"
-polyancestry = readPolyAncestry(string(outstem, "_polyancestry.csv"))
+# Check output
+
+The main output file constains multiple dataframes.
+```julia
+ancestryfile = outstem*"_polyancestry.csv"
+res = PolyOrigin.readdlm2dict(ancestryfile)
+keys(res)
 ```
+The parentgeno dataframe. At each marker for each parent, the phased parental
+genotype is given by e.g. 1|2|2|1, where 1 and 2 denote the two alleles.
+```julia
+show(res["parentgeno"][1:10:100,1:6],eltypes=false)
+```
+
+The genoprob dataframe. At each marker for each offspring, the posterior probability
+distribution is given by e.g. 57|87=>0.336|0.664, meaning that the posterior
+probabilities of ancestral genotypes 57 and 87 are 0.336 and 0.664, respectively.
+```julia
+show(res["genoprob"][1:10:100,1:4],eltypes=false)
+```
+The ancestral genotypes are defined for each sub-population in the following.
+The columns state and stateindex denote the ancestral genotypes.
+```julia
+show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
+```
+where 1-4 denote the homologs in the first parent, and 5-8 for the second parent.
+
+The valentprob dataframe. For each offpsring in each chromosome, the valent is
+given eg. 1:3-2:4&5:8-6:7|1:3-2:4&5:6:7:8 where & delimits the valent configurations
+between two parents, and |  delimits each possible combination of valent configurations.
+The column valentprob gives the full posterior probabilties.
+```julia
+println(join(names(res["valentprob"])[[1,2,5,7]],", "))
+println(join(Vector(res["valentprob"][1,[1,2,5,7]]),", "))
+```
+
+# Relative frequencies of valent configurations
+
+We can read polyancestry
+```julia; results = "hidden"
+polyancestry = readPolyAncestry(outstem*"_polyancestry.csv")
+```
+
+Relative frequencies of bi- or quadri-valent formations for each parent in
+each chromosome
+```julia
+valentfreq = calvalentfreq(polyancestry)
+```
+
+plot the relative frequences averaging overage chromosomes/parents
+```julia
+plotvalentfreq(valentfreq)
+```
+where 1:2:3:4 denotes quadrivalent formation and the others for bivalent formations
 
 # Calculate estimation error probability
 
@@ -64,7 +137,7 @@ where
 * `nphaseerr` = number of wrongly estimated parental phases,
 * `nalleleerr` = number of wrongly estimated alleles for  parental phased genotypes,
 * `nparentgeno` = total number of parental genotypes,
-* `assignerr` = one minus probability of true unphased origin-genotype,
+* `assignerr` = one minus probability of true unphased ancestral genotype,
 * `callerr` = fraction of unphased origin-genotypes being wrongly called,
 * `delfraction` = fraction of markers being deleted.
 
@@ -78,7 +151,7 @@ plotCondprob(polyancestry,truegeno=truegeno,offspring=1)
 Visualize haplotype probabilities of all offspring
 ```julia; results = "hidden"
 animCondprob(polyancestry,truegeno=truegeno, fps=0.5,
-  outfile="tetraploid_simgbs_output_condprob.gif")
+  outfile=outstem*"_condprob.gif")
 ```
 ![](tetraploid_simgbs_output_condprob.gif)
 

@@ -22,6 +22,12 @@ chrsubset = 1:4
 outfiles = filter(x -> occursin(outstem, x), readdir())
 println("outfiles=", outfiles)
 
+# plot relative frequencies of valent configurations
+polyancestry = readPolyAncestry(outstem*"_polyancestry.csv")
+valentfreq = calvalentfreq(polyancestry)
+plotvalentfreq(valentfreq)
+
+# comparing maps
 polygeno = readPolyGeno(genofile, pedfile;isphysmap = true)
 fig = plotMapComp(
     polygeno.markermap[chrsubset],

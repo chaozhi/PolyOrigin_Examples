@@ -1,8 +1,8 @@
 Julia version: 1.5.3
 Status `C:\Users\zheng026\.julia\environments\v1.5\Project.toml`
-  [16de7d52] PolyOrigin v0.5.0 `https://github.com/chaozhi/PolyOrigin.jl#main`
+  [16de7d52] PolyOrigin v0.5.3 `https://github.com/chaozhi/PolyOrigin.jl#main`
 =================================polyOrigin=================================
-PolyOrigin, polyOrigin, logfile=example_output.log, 2020-12-08T11:46:53.868
+PolyOrigin, polyOrigin, logfile=example_output.log, 2021-01-05T19:37:39.687
 list of input files: 
 genofile = geno.csv
 pedfile = ped.csv
@@ -12,7 +12,7 @@ missingstring = NA
 commentstring = #
 save design plot in C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output_plots\example_output_pedigree.png
 ----------------------------------phasing-----------------------------------
-PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output.log>), 2020-12-08T11:46:58.811
+PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output.log>), 2021-01-05T19:38:44.265
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -36,25 +36,26 @@ workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Exa
 verbose = true
 data: #pop=4, #parent=3, #offspring=40, #chr=1, #marker=120
 phasing connected parents: A, B, C
-#chr=A, run=1, it=1, logl=-3850.23, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=2, logl=-1912.02, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=3, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=4, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=2, it=1, logl=-3688.53, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=2, logl=-1705.54, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=3, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=4, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=3, it=1, logl=-3542.83, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=2, logl=-2365.51, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=3, logl=-1635.61, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=4, logl=-1505.39, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=5, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=6, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, #marker=120, done, elapsed=17.0 seconds, #mismatch(run1 ~ runs) = [0, 0, 0]
+#chr=A, run=1, it=1, logl=-5266.5, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=2, logl=-2676.92, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=3, logl=-1572.25, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=4, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=5, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
+#chr=A, run=2, it=1, logl=-3447.77, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=2, logl=-1709.55, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=3, logl=-1481.51, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=4, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=5, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
+#chr=A, run=3, it=1, logl=-4235.11, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=2, logl=-2528.06, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=3, logl=-2169.13, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=4, logl=-1475.49, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=5, logl=-1475.49, epsilon=0.01, nstuck=5, ndel=0
+#chr=A, #marker=120, done, elapsed=44.0 seconds, #mismatch(run1 ~ runs) = [0, 0, 0]
 parentphased file: example_output_parentphased.csv
-End, 2020-12-08T11:47:15.759, time elapsed = 17.0 seconds by polyPhase
+End, 2021-01-05T19:39:32.939, time elapsed = 49.0 seconds by polyPhase
 --------------------------------maprefinning--------------------------------
-PolyOrigin, polyReconstruct!, 2020-12-08T11:47:15.761
+PolyOrigin, polyReconstruct!, 2021-01-05T19:39:33.036
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -70,8 +71,8 @@ workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Exa
 verbose = true
 #chr=A, it=1, <eps>=0.0284, #dose_diff=4, #phase_diff=4, #error_diff=68.0
 #chr=A, it=2, <eps>=0.013, no_error_correction
-End, 2020-12-08T11:47:25.826, time elapsed = 10.0 seconds by polyReconstruct!
-PolyOrigin, polyMapRefine, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output.log>), 2020-12-08T11:47:25.827
+End, 2021-01-05T19:40:04.412, time elapsed = 31.0 seconds by polyReconstruct!
+PolyOrigin, polyMapRefine, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output.log>), 2021-01-05T19:40:04.474
 list of option values: 
 epsilon = 0.01
 chrpairing = 44
@@ -89,25 +90,25 @@ logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid
 workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example
 verbose = true
 no offspring excluded
-#chr=A, it=1, logl=-1156.0, len=112.9, ndel=0, <eps>=0.0208, win=16, T=4.0
-#chr=A, it=2, logl=-1098.6, len=112.6, ndel=0, <eps>=0.018, win=8, T=2.0
-#chr=A, it=3, logl=-1056.7, len=108.1, ndel=0, <eps>=0.0179, win=7, T=1.0
-#chr=A, it=4, logl=-1045.3, len=104.4, ndel=0, <eps>=0.0171, win=5, T=0.5
-#chr=A, it=5, logl=-1033.9, len=105.2, ndel=0, <eps>=0.0153, win=2, T=0.25
-#chr=A, it=6, logl=-1025.1, len=104.3, ndel=0
-#chr=A, it=7, logl=-1024.2, len=104.7, ndel=0
-#chr=A, it=1, logl=-691.2, len=98.5, skeleton=50, <eps>=0.0137
-#chr=A, it=2, logl=-696.8, len=101.3, skeleton=50, <eps>=0.0171
-#chr=A, it=3, logl=-697.4, len=101.5, skeleton=50, <eps>=0.0173
-#chr=A, it=4, logl=-697.4, len=101.8, skeleton=50, <eps>=0.0173
-#chr=A, it=5, logl=-697.3, len=101.9, skeleton=50, <eps>=0.0172
-#chr=A, done, elapsed=34.0seconds, len=101.9cM, #marker=120
+#chr=A, it=1, logl=-1177.2, len=114.3, ndel=0, <eps>=0.023, win=11, T=4.0
+#chr=A, it=2, logl=-1107.4, len=105.7, ndel=0, <eps>=0.0205, win=9, T=2.0
+#chr=A, it=3, logl=-1076.0, len=108.8, ndel=0, <eps>=0.0186, win=5, T=1.0
+#chr=A, it=4, logl=-1046.0, len=107.9, ndel=0, <eps>=0.0168, win=6, T=0.5
+#chr=A, it=5, logl=-1034.9, len=109.6, ndel=0, <eps>=0.0177, win=2, T=0.25
+#chr=A, it=6, logl=-1040.8, len=109.6, ndel=0
+#chr=A, it=7, logl=-1040.1, len=109.1, ndel=0
+#chr=A, it=1, logl=-690.5, len=100.7, skeleton=50, <eps>=0.0139
+#chr=A, it=2, logl=-687.6, len=99.8, skeleton=50, <eps>=0.0136
+#chr=A, it=3, logl=-688.4, len=100.4, skeleton=50, <eps>=0.0151
+#chr=A, it=4, logl=-692.5, len=102.2, skeleton=50, <eps>=0.0177
+#chr=A, it=5, logl=-692.2, len=101.4, skeleton=50, <eps>=0.0175
+#chr=A, done, elapsed=31.0seconds, len=101.4cM, #marker=120
 maprefined file: example_output_maprefined.csv
-Kendall tau between inputmap and refinedmap = [0.9574]
-End, 2020-12-08T11:47:59.834, time used = 34.0 seconds by polyMapRefine
+Kendall tau between inputmap and refinedmap = [0.9434]
+End, 2021-01-05T19:40:39.772, time used = 35.0 seconds by polyMapRefine
 mapcomp file: example_output_plots\example_output_mapcomp.png
 -------------------------------reconstructing-------------------------------
-PolyOrigin, polyReconstruct!, 2020-12-08T11:47:59.889
+PolyOrigin, polyReconstruct!, 2021-01-05T19:40:43.707
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -121,14 +122,14 @@ outstem = example_output
 logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output.log>)
 workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example
 verbose = true
-#chr=A, it=1, <eps>=0.019, no_error_correction
+#chr=A, it=1, <eps>=0.0214, no_error_correction
 no outlier offspring
 parentcorrected file: example_output_parentphased_corrected.csv
 polyancestry file: example_output_polyancestry.csv
 genoprob file: example_output_genoprob.csv, a concise polyancestry file
 postdoseprob file: example_output_postdoseprob.csv
 probplot in folder: C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\example\example_output_plots
-End, 2020-12-08T11:48:08.796, time elapsed = 9.0 seconds by polyReconstruct!
+End, 2021-01-05T19:41:01.123, time elapsed = 17.0 seconds by polyReconstruct!
 ----------------------------------------------------------------------------
-End, 2020-12-08T11:48:08.797, total time used = 75.0 seconds by polyOrigin
+End, 2021-01-05T19:41:01.124, total time used = 201.0 seconds by polyOrigin
 ============================================================================

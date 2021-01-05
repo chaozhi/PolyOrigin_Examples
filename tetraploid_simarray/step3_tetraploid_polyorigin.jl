@@ -7,10 +7,11 @@ dataid = "tetraploid_simarray"
 genofile = string(dataid,"_geno_disturbed.csv")
 pedfile = string(dataid,"_ped.csv")
 outstem = string(dataid,"_output")
+
 polygeno = readPolyGeno(genofile, pedfile)
 PolyOrigin.plotdesign(polygeno)
 
-@time polyancestry = polyOrigin!(polygeno;
+@time polyancestry =  polyOrigin(genofile,pedfile;
     refinemap = true,
     refineorder = true,
     outstem = outstem,
@@ -18,12 +19,18 @@ PolyOrigin.plotdesign(polygeno)
 outfiles = filter(x -> occursin(outstem, x), readdir())
 println(outfiles)
 
-polyancestry = readPolyAncestry(string(outstem, "_genoprob.csv"), pedfile)
+# plot relative frequencies of valent configurations
+polyancestry = readPolyAncestry(outstem*"_polyancestry.csv")
+valentfreq = calvalentfreq(polyancestry)
+plotvalentfreq(valentfreq)
+
+# calculate estimation accuracies
 truefile = string(dataid,"_true.csv")
 truegeno = readTruegeno!(truefile, polyancestry)
 acc = calAccuracy!(truegeno, polyancestry)
 println(acc)
 
+# plot conditional probabilities
 plotCondprob(polyancestry, truegeno = truegeno, offspring = 1)
 animCondprob(
     polyancestry,
@@ -32,6 +39,7 @@ animCondprob(
     outfile=string(outstem,"_condprob.gif"),
 )
 
+# comparing maps
 polygeno = readPolyGeno(genofile, pedfile)
 fig = plotMapComp(
     truegeno.truemap,
