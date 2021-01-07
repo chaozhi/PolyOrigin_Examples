@@ -2,7 +2,7 @@ Julia version: 1.5.3
 Status `C:\Users\zheng026\.julia\environments\v1.5\Project.toml`
   [16de7d52] PolyOrigin v0.5.3 `https://github.com/chaozhi/PolyOrigin.jl#main`
 =================================polyOrigin=================================
-PolyOrigin, polyOrigin, logfile=tetraploid_simgbs_output.log, 2021-01-05T20:24:35.038
+PolyOrigin, polyOrigin, logfile=tetraploid_simgbs_output.log, 2021-01-07T14:31:25.67
 list of input files: 
 genofile = tetraploid_simgbs_geno.csv
 pedfile = tetraploid_simgbs_ped.csv
@@ -11,7 +11,7 @@ delimchar = ,
 missingstring = NA
 commentstring = #
 ----------------------------------phasing-----------------------------------
-PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simgbs\tetraploid_simgbs_output.log>), 2021-01-05T20:24:35.91
+PolyOrigin, polyPhase, logfile=IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simgbs\tetraploid_simgbs_output.log>), 2021-01-07T14:31:32.867
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -35,60 +35,120 @@ workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Exa
 verbose = true
 data: #pop=10, #parent=5, #offspring=200, #chr=1, #marker=120
 phasing connected parents: A, B, C, D, E
-#chr=A, run=1, it=1, logl=-29980.96, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=2, logl=-21405.39, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=3, logl=-19914.53, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=1, it=4, logl=-19914.53, epsilon=0.01, nstuck=1, ndel=0
-#chr=A, run=1, it=5, logl=-19893.59, epsilon=0.011, nstuck=0, ndel=0
-#chr=A, run=1, it=6, logl=-19893.59, epsilon=0.011, nstuck=5, ndel=0
-#chr=A, run=2, it=1, logl=-30560.75, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=2, logl=-21499.16, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=3, logl=-19974.41, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=4, logl=-19926.75, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=5, logl=-19916.68, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=6, logl=-19916.44, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=2, it=7, logl=-19916.44, epsilon=0.01, nstuck=1, ndel=0
-#chr=A, run=2, it=8, logl=-19916.44, epsilon=0.011, nstuck=2, ndel=0
-#chr=A, run=2, it=9, logl=-19895.45, epsilon=0.011, nstuck=0, ndel=0
-#chr=A, run=2, it=10, logl=-19895.45, epsilon=0.011, nstuck=1, ndel=0
-#chr=A, run=2, it=11, logl=-19895.45, epsilon=0.011, nstuck=2, ndel=0
-#chr=A, run=2, it=12, logl=-19895.45, epsilon=0.011, nstuck=3, ndel=0
-#chr=A, run=2, it=13, logl=-19895.45, epsilon=0.011, nstuck=4, ndel=0
-#chr=A, run=2, it=14, logl=-19895.45, epsilon=0.011, nstuck=5, ndel=0
-#chr=A, run=3, it=1, logl=-32110.1, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=2, logl=-23657.51, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=3, logl=-20118.91, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=4, logl=-19998.57, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=5, logl=-19936.85, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=6, logl=-19893.46, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=3, it=7, logl=-19893.46, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=4, it=1, logl=-32651.7, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=4, it=2, logl=-24955.43, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=4, it=3, logl=-20139.28, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=4, it=4, logl=-19964.17, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=4, it=5, logl=-19901.7, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=4, it=6, logl=-19901.7, epsilon=0.01, nstuck=5, ndel=0
-#chr=A, run=5, it=1, logl=-30654.7, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=2, logl=-23178.71, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=3, logl=-20448.4, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=4, logl=-19953.46, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=5, logl=-19944.32, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=6, logl=-19901.7, epsilon=0.01, nstuck=0, ndel=0
-#chr=A, run=5, it=7, logl=-19901.7, epsilon=0.01, nstuck=1, ndel=0
-#chr=A, run=5, it=8, logl=-19901.7, epsilon=0.011, nstuck=2, ndel=0
-#chr=A, run=5, it=9, logl=-19901.7, epsilon=0.011, nstuck=3, ndel=0
-#chr=A, run=5, it=10, logl=-19901.7, epsilon=0.011, nstuck=4, ndel=0
-#chr=A, run=5, it=11, logl=-19893.59, epsilon=0.011, nstuck=0, ndel=0
-#chr=A, run=5, it=12, logl=-19893.59, epsilon=0.011, nstuck=1, ndel=0
-#chr=A, run=5, it=13, logl=-19893.59, epsilon=0.011, nstuck=2, ndel=0
-#chr=A, run=5, it=14, logl=-19893.59, epsilon=0.011, nstuck=3, ndel=0
-#chr=A, run=5, it=15, logl=-19893.59, epsilon=0.011, nstuck=4, ndel=0
-#chr=A, run=5, it=16, logl=-19893.59, epsilon=0.011, nstuck=5, ndel=0
-#chr=A, #marker=120, done, elapsed=263.0 seconds, #mismatch(run3 ~ runs) = [0, 3, 0, 1, 0]
+#chr=A, run=1, it=1, logl=-32462.37, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=2, logl=-26951.51, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=3, logl=-20811.21, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=4, logl=-19913.16, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=5, logl=-19909.81, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=6, logl=-19909.81, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=1, it=7, logl=-19909.81, epsilon=0.01, nstuck=2, ndel=0
+#chr=A, run=1, it=8, logl=-19909.81, epsilon=0.01, nstuck=3, ndel=0
+#chr=A, run=1, it=9, logl=-19909.81, epsilon=0.01, nstuck=4, ndel=0
+#chr=A, run=1, it=10, logl=-19901.7, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=1, it=11, logl=-19901.7, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=1, it=12, logl=-19901.7, epsilon=0.01, nstuck=2, ndel=0
+#chr=A, run=1, it=13, logl=-19901.7, epsilon=0.01, nstuck=3, ndel=0
+#chr=A, run=1, it=14, logl=-19901.7, epsilon=0.01, nstuck=4, ndel=0
+#chr=A, run=1, it=15, logl=-19901.7, epsilon=0.01, nstuck=9, ndel=0
+#chr=A, run=2, it=1, logl=-31540.64, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=2, logl=-24356.19, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=3, logl=-20134.26, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=4, logl=-19901.7, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=2, it=5, logl=-19901.7, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=2, it=6, logl=-19901.7, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=2, it=7, logl=-19901.7, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=2, it=8, logl=-19901.7, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=2, it=9, logl=-19901.7, epsilon=0.011, nstuck=5, ndel=0
+#chr=A, run=3, it=1, logl=-31057.7, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=2, logl=-22601.95, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=3, logl=-19945.34, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=4, logl=-19917.81, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=5, logl=-19893.46, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=3, it=6, logl=-19893.46, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=3, it=7, logl=-19893.46, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=3, it=8, logl=-19893.46, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=3, it=9, logl=-19882.32, epsilon=0.011, nstuck=0, ndel=0
+#chr=A, run=3, it=10, logl=-19882.32, epsilon=0.011, nstuck=1, ndel=0
+#chr=A, run=3, it=11, logl=-19882.32, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=3, it=12, logl=-19882.32, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=3, it=13, logl=-19882.32, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=3, it=14, logl=-19882.32, epsilon=0.011, nstuck=5, ndel=0
+#chr=A, run=4, it=1, logl=-30887.61, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=4, it=2, logl=-22291.4, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=4, it=3, logl=-19926.11, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=4, it=4, logl=-19926.11, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=4, it=5, logl=-19926.11, epsilon=0.0117, nstuck=2, ndel=0
+#chr=A, run=4, it=6, logl=-19902.03, epsilon=0.0117, nstuck=0, ndel=0
+#chr=A, run=4, it=7, logl=-19902.03, epsilon=0.0117, nstuck=1, ndel=0
+#chr=A, run=4, it=8, logl=-19902.03, epsilon=0.0117, nstuck=2, ndel=0
+#chr=A, run=4, it=9, logl=-19902.03, epsilon=0.0117, nstuck=3, ndel=0
+#chr=A, run=4, it=10, logl=-19902.03, epsilon=0.0117, nstuck=8, ndel=0
+#chr=A, run=5, it=1, logl=-30975.98, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=5, it=2, logl=-23363.74, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=5, it=3, logl=-19966.83, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=5, it=4, logl=-19925.41, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=5, it=5, logl=-19925.41, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=5, it=6, logl=-19901.73, epsilon=0.011, nstuck=0, ndel=0
+#chr=A, run=5, it=7, logl=-19901.73, epsilon=0.011, nstuck=1, ndel=0
+#chr=A, run=5, it=8, logl=-19901.73, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=5, it=9, logl=-19893.59, epsilon=0.011, nstuck=0, ndel=0
+#chr=A, run=5, it=10, logl=-19893.59, epsilon=0.011, nstuck=1, ndel=0
+#chr=A, run=5, it=11, logl=-19893.59, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=5, it=12, logl=-19893.59, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=5, it=13, logl=-19893.59, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=5, it=14, logl=-19882.32, epsilon=0.011, nstuck=0, ndel=0
+#chr=A, run=5, it=15, logl=-19882.32, epsilon=0.011, nstuck=1, ndel=0
+#chr=A, run=5, it=16, logl=-19882.32, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=5, it=17, logl=-19882.32, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=5, it=18, logl=-19882.32, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=5, it=19, logl=-19882.32, epsilon=0.011, nstuck=5, ndel=0
+#chr=A, run=6, it=1, logl=-32194.14, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=6, it=2, logl=-24287.54, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=6, it=3, logl=-20177.12, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=6, it=4, logl=-19908.07, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=6, it=5, logl=-19908.07, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=6, it=6, logl=-19908.07, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=6, it=7, logl=-19908.07, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=6, it=8, logl=-19908.07, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=6, it=9, logl=-19899.83, epsilon=0.011, nstuck=0, ndel=0
+#chr=A, run=6, it=10, logl=-19899.83, epsilon=0.011, nstuck=1, ndel=0
+#chr=A, run=6, it=11, logl=-19899.83, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=6, it=12, logl=-19899.83, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=6, it=13, logl=-19899.83, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=6, it=14, logl=-19899.83, epsilon=0.011, nstuck=5, ndel=0
+#chr=A, run=7, it=1, logl=-32379.66, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=7, it=2, logl=-26658.74, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=7, it=3, logl=-20798.61, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=7, it=4, logl=-19951.5, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=7, it=5, logl=-19901.7, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=7, it=6, logl=-19901.7, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=7, it=7, logl=-19901.7, epsilon=0.011, nstuck=2, ndel=0
+#chr=A, run=7, it=8, logl=-19901.7, epsilon=0.011, nstuck=3, ndel=0
+#chr=A, run=7, it=9, logl=-19901.7, epsilon=0.011, nstuck=4, ndel=0
+#chr=A, run=7, it=10, logl=-19901.7, epsilon=0.011, nstuck=5, ndel=0
+#chr=A, run=8, it=1, logl=-31748.76, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=8, it=2, logl=-24342.46, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=8, it=3, logl=-20377.0, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=8, it=4, logl=-20194.03, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=8, it=5, logl=-20186.9, epsilon=0.01, nstuck=0, ndel=0
+#chr=A, run=8, it=6, logl=-20186.9, epsilon=0.01, nstuck=1, ndel=0
+#chr=A, run=8, it=7, logl=-20186.9, epsilon=0.0144, nstuck=2, ndel=0
+#chr=A, run=8, it=8, logl=-20186.9, epsilon=0.0144, nstuck=3, ndel=0
+#chr=A, run=8, it=9, logl=-19946.63, epsilon=0.0144, nstuck=0, ndel=0
+#chr=A, run=8, it=10, logl=-19908.32, epsilon=0.0144, nstuck=0, ndel=0
+#chr=A, run=8, it=11, logl=-19908.32, epsilon=0.0144, nstuck=1, ndel=0
+#chr=A, run=8, it=12, logl=-19908.32, epsilon=0.0144, nstuck=2, ndel=0
+#chr=A, run=8, it=13, logl=-19905.06, epsilon=0.0144, nstuck=0, ndel=0
+#chr=A, run=8, it=14, logl=-19905.06, epsilon=0.0144, nstuck=1, ndel=0
+#chr=A, run=8, it=15, logl=-19905.06, epsilon=0.0144, nstuck=2, ndel=0
+#chr=A, run=8, it=16, logl=-19886.15, epsilon=0.0144, nstuck=0, ndel=0
+#chr=A, run=8, it=17, logl=-19886.15, epsilon=0.0144, nstuck=1, ndel=0
+#chr=A, run=8, it=18, logl=-19886.15, epsilon=0.0144, nstuck=6, ndel=0
+#chr=A, #marker=120, done, elapsed=551.0 seconds, #mismatch(run3 ~ runs) = [2, 2, 0, 2, 0, 1, 2, 0]
 parentphased file: tetraploid_simgbs_output_parentphased.csv
-End, 2021-01-05T20:29:00.772, time elapsed = 265.0 seconds by polyPhase
+End, 2021-01-07T14:40:50.861, time elapsed = 558.0 seconds by polyPhase
 -------------------------------reconstructing-------------------------------
-PolyOrigin, polyReconstruct!, 2021-01-05T20:29:00.867
+PolyOrigin, polyReconstruct!, 2021-01-07T14:40:51.052
 list of option values: 
 epsilon = 0.01
 seqerr = 0.001
@@ -102,12 +162,12 @@ outstem = tetraploid_simgbs_output
 logfile = IOStream(<file C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simgbs\tetraploid_simgbs_output.log>)
 workdir = C:\Chaozhi\Workspace\JuliaWorkspace\Workspace_Polyploid\PolyOrigin_Examples\tetraploid_simgbs
 verbose = true
-#chr=A, it=1, <eps>=0.0162, no_error_correction
+#chr=A, it=1, <eps>=0.0159, no_error_correction
 no outlier offspring
 polyancestry file: tetraploid_simgbs_output_polyancestry.csv
 genoprob file: tetraploid_simgbs_output_genoprob.csv, a concise polyancestry file
 postdoseprob file: tetraploid_simgbs_output_postdoseprob.csv
-End, 2021-01-05T20:29:20.94, time elapsed = 20.0 seconds by polyReconstruct!
+End, 2021-01-07T14:41:30.029, time elapsed = 39.0 seconds by polyReconstruct!
 ----------------------------------------------------------------------------
-End, 2021-01-05T20:29:20.941, total time used = 286.0 seconds by polyOrigin
+End, 2021-01-07T14:41:30.03, total time used = 604.0 seconds by polyOrigin
 ============================================================================
