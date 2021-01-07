@@ -14,7 +14,6 @@ using PolyOrigin
 
 
 
-
 # Input files
 Set working directory to the direcotry of this file.
 ~~~~{.julia}
@@ -217,16 +216,16 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
 10×5 DataFrame
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
-   1 │          1  1|2          A|B              9  1-1-7-8
-   2 │          1  1|2          A|B             30  1-3-8-8
-   3 │          1  1|2          A|B             31  1-4-5-5
-   4 │          1  1|2          A|B             42  2-2-5-6
-   5 │          1  1|2          A|B             53  2-3-5-7
-   6 │          1  1|2          A|B             56  2-3-6-7
-   7 │          1  1|2          A|B             61  2-4-5-5
-   8 │          1  1|2          A|B             76  3-3-6-7
-   9 │          1  1|2          A|B             93  4-4-5-7
-  10 │          1  1|2          A|B            100  4-4-8-8
+   1 │          1  1|2          A|B             50  2-2-8-8
+   2 │          1  1|2          A|B             56  2-3-6-7
+   3 │          1  1|2          A|B             58  2-3-7-7
+   4 │          1  1|2          A|B             60  2-3-8-8
+   5 │          1  1|2          A|B             64  2-4-5-8
+   6 │          1  1|2          A|B             69  2-4-7-8
+   7 │          1  1|2          A|B             78  3-3-7-7
+   8 │          1  1|2          A|B             90  3-4-8-8
+   9 │          1  1|2          A|B             98  4-4-7-7
+  10 │          1  1|2          A|B             99  4-4-7-8
 ~~~~
 
 
@@ -337,7 +336,7 @@ where
 * `nalleleerr` = number of wrongly estimated alleles for  parental phased genotypes,
 * `nparentgeno` = total number of parental genotypes,
 * `assignerr` = one minus probability of true unphased origin-genotype,
-* `callerr` = fraction of unphased origin-genotypes being wrongly called,
+* `callerr` = fraction of unphased ancestral genotypes being wrongly called,
 * `delfraction` = fraction of markers being deleted.
 
 # Visualize conditional probability

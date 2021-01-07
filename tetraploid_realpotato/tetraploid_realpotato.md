@@ -159,8 +159,7 @@ keys(res)
 ~~~~~~~~~~~~~
 
 ~~~~
-Base.KeySet for a Dict{SubString{String},DataFrames.DataFrame} with 10 entr
-ies. Keys:
+Base.KeySet for a Dict{SubString{String},DataFrame} with 10 entries. Keys:
   "parentinfo"
   "offspringinfo"
   "valentprob"
@@ -249,15 +248,15 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
  Row │ population  parentindex  parent                 stateindex  state
 ─────┼─────────────────────────────────────────────────────────────────────
    1 │ pop1        1|2          W6511-1R|VillettaRose           4  1-1-5-8
-   2 │ pop1        1|2          W6511-1R|VillettaRose          11  1-2-5-5
-   3 │ pop1        1|2          W6511-1R|VillettaRose          40  1-4-8-8
-   4 │ pop1        1|2          W6511-1R|VillettaRose          59  2-3-7-8
-   5 │ pop1        1|2          W6511-1R|VillettaRose          60  2-3-8-8
-   6 │ pop1        1|2          W6511-1R|VillettaRose          65  2-4-6-6
-   7 │ pop1        1|2          W6511-1R|VillettaRose          75  3-3-6-6
-   8 │ pop1        1|2          W6511-1R|VillettaRose          75  3-3-6-6
-   9 │ pop1        1|2          W6511-1R|VillettaRose          76  3-3-6-7
-  10 │ pop1        1|2          W6511-1R|VillettaRose          86  3-4-6-7
+   2 │ pop1        1|2          W6511-1R|VillettaRose           4  1-1-5-8
+   3 │ pop1        1|2          W6511-1R|VillettaRose          12  1-2-5-6
+   4 │ pop1        1|2          W6511-1R|VillettaRose          21  1-3-5-5
+   5 │ pop1        1|2          W6511-1R|VillettaRose          23  1-3-5-7
+   6 │ pop1        1|2          W6511-1R|VillettaRose          32  1-4-5-6
+   7 │ pop1        1|2          W6511-1R|VillettaRose          49  2-2-7-8
+   8 │ pop1        1|2          W6511-1R|VillettaRose          63  2-4-5-7
+   9 │ pop1        1|2          W6511-1R|VillettaRose          68  2-4-7-7
+  10 │ pop1        1|2          W6511-1R|VillettaRose          83  3-4-5-7
 ~~~~
 
 
