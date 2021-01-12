@@ -39,7 +39,7 @@ show(CSV.read(genofile,DataFrame)[1:5,1:6],eltypes=false)
 plot crossdesign for the 5x5 diallel cross.
 ```julia
 polygeno = readPolyGeno(genofile, pedfile)
-PolyOrigin.plotdesign(polygeno)
+PolyOrigin.plotdesign(polygeno;method=:circular)
 ```
 
 # Run polyOrigin

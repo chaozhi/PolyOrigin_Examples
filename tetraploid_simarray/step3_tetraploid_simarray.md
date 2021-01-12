@@ -81,7 +81,7 @@ show(CSV.read(genofile,DataFrame)[1:5,1:10],eltypes=false)
 plot crossdesign for the 5x5 diallel cross.
 ~~~~{.julia}
 polygeno = readPolyGeno(genofile, pedfile)
-PolyOrigin.plotdesign(polygeno)
+PolyOrigin.plotdesign(polygeno;method=:circular)
 ~~~~~~~~~~~~~
 
 ![](figures/step3_tetraploid_simarray_6_1.png)\ 
@@ -113,9 +113,8 @@ outfiles = filter(x->occursin(outstem,x), readdir())
 ~~~~~~~~~~~~~
 
 ~~~~
-8-element Array{String,1}:
+7-element Array{String,1}:
  "tetraploid_simarray_output.log"
- "tetraploid_simarray_output_condprob.gif"
  "tetraploid_simarray_output_genoprob.csv"
  "tetraploid_simarray_output_maprefined.csv"
  "tetraploid_simarray_output_parentphased.csv"
@@ -217,16 +216,16 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
 10×5 DataFrame
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
-   1 │          1  1|2          A|B              6  1-1-6-7
-   2 │          1  1|2          A|B              9  1-1-7-8
-   3 │          1  1|2          A|B             32  1-4-5-6
-   4 │          1  1|2          A|B             35  1-4-6-6
-   5 │          1  1|2          A|B             40  1-4-8-8
-   6 │          1  1|2          A|B             76  3-3-6-7
-   7 │          1  1|2          A|B             84  3-4-5-8
-   8 │          1  1|2          A|B             84  3-4-5-8
-   9 │          1  1|2          A|B             98  4-4-7-7
-  10 │          1  1|2          A|B             98  4-4-7-7
+   1 │          1  1|2          A|B             11  1-2-5-5
+   2 │          1  1|2          A|B             32  1-4-5-6
+   3 │          1  1|2          A|B             53  2-3-5-7
+   4 │          1  1|2          A|B             55  2-3-6-6
+   5 │          1  1|2          A|B             56  2-3-6-7
+   6 │          1  1|2          A|B             60  2-3-8-8
+   7 │          1  1|2          A|B             76  3-3-6-7
+   8 │          1  1|2          A|B             79  3-3-7-8
+   9 │          1  1|2          A|B             79  3-3-7-8
+  10 │          1  1|2          A|B             90  3-4-8-8
 ~~~~
 
 
