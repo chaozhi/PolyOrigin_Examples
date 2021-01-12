@@ -113,8 +113,9 @@ outfiles = filter(x->occursin(outstem,x), readdir())
 ~~~~~~~~~~~~~
 
 ~~~~
-7-element Array{String,1}:
+8-element Array{String,1}:
  "tetraploid_simarray_output.log"
+ "tetraploid_simarray_output_condprob.gif"
  "tetraploid_simarray_output_genoprob.csv"
  "tetraploid_simarray_output_maprefined.csv"
  "tetraploid_simarray_output_parentphased.csv"
@@ -216,16 +217,16 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
 10×5 DataFrame
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
-   1 │          1  1|2          A|B             50  2-2-8-8
-   2 │          1  1|2          A|B             56  2-3-6-7
-   3 │          1  1|2          A|B             58  2-3-7-7
-   4 │          1  1|2          A|B             60  2-3-8-8
-   5 │          1  1|2          A|B             64  2-4-5-8
-   6 │          1  1|2          A|B             69  2-4-7-8
-   7 │          1  1|2          A|B             78  3-3-7-7
-   8 │          1  1|2          A|B             90  3-4-8-8
+   1 │          1  1|2          A|B              6  1-1-6-7
+   2 │          1  1|2          A|B              9  1-1-7-8
+   3 │          1  1|2          A|B             32  1-4-5-6
+   4 │          1  1|2          A|B             35  1-4-6-6
+   5 │          1  1|2          A|B             40  1-4-8-8
+   6 │          1  1|2          A|B             76  3-3-6-7
+   7 │          1  1|2          A|B             84  3-4-5-8
+   8 │          1  1|2          A|B             84  3-4-5-8
    9 │          1  1|2          A|B             98  4-4-7-7
-  10 │          1  1|2          A|B             99  4-4-7-8
+  10 │          1  1|2          A|B             98  4-4-7-7
 ~~~~
 
 
