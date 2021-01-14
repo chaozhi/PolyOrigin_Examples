@@ -108,13 +108,13 @@ PolyOrigin.plotdesign(polygeno)
 run polyOrigin
 ~~~~{.julia}
 @time polyancestry= polyOrigin(genofile,pedfile;
+    refinemap=true,
+    refineorder=false,
     isphysmap=true,
     recomrate=1.25,
     chrsubset=chrsubset,
     snpsubset=1:5:1000,
-    isparallel=true,
-    refinemap=true,
-    refineorder=false,
+    isparallel=true,    
     outstem=outstem
 )
 ~~~~~~~~~~~~~
@@ -159,7 +159,8 @@ keys(res)
 ~~~~~~~~~~~~~
 
 ~~~~
-Base.KeySet for a Dict{SubString{String},DataFrame} with 10 entries. Keys:
+Base.KeySet for a Dict{SubString{String},DataFrames.DataFrame} with 10 entr
+ies. Keys:
   "parentinfo"
   "offspringinfo"
   "valentprob"
@@ -248,15 +249,15 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
  Row │ population  parentindex  parent                 stateindex  state
 ─────┼─────────────────────────────────────────────────────────────────────
    1 │ pop1        1|2          W6511-1R|VillettaRose           4  1-1-5-8
-   2 │ pop1        1|2          W6511-1R|VillettaRose           4  1-1-5-8
-   3 │ pop1        1|2          W6511-1R|VillettaRose          12  1-2-5-6
-   4 │ pop1        1|2          W6511-1R|VillettaRose          21  1-3-5-5
-   5 │ pop1        1|2          W6511-1R|VillettaRose          23  1-3-5-7
-   6 │ pop1        1|2          W6511-1R|VillettaRose          32  1-4-5-6
-   7 │ pop1        1|2          W6511-1R|VillettaRose          49  2-2-7-8
-   8 │ pop1        1|2          W6511-1R|VillettaRose          63  2-4-5-7
-   9 │ pop1        1|2          W6511-1R|VillettaRose          68  2-4-7-7
-  10 │ pop1        1|2          W6511-1R|VillettaRose          83  3-4-5-7
+   2 │ pop1        1|2          W6511-1R|VillettaRose          11  1-2-5-5
+   3 │ pop1        1|2          W6511-1R|VillettaRose          21  1-3-5-5
+   4 │ pop1        1|2          W6511-1R|VillettaRose          30  1-3-8-8
+   5 │ pop1        1|2          W6511-1R|VillettaRose          41  2-2-5-5
+   6 │ pop1        1|2          W6511-1R|VillettaRose          57  2-3-6-8
+   7 │ pop1        1|2          W6511-1R|VillettaRose          85  3-4-6-6
+   8 │ pop1        1|2          W6511-1R|VillettaRose          94  4-4-5-8
+   9 │ pop1        1|2          W6511-1R|VillettaRose          96  4-4-6-7
+  10 │ pop1        1|2          W6511-1R|VillettaRose          99  4-4-7-8
 ~~~~
 
 

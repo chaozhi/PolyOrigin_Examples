@@ -58,13 +58,13 @@ PolyOrigin.plotdesign(polygeno)
 run polyOrigin
 ```julia; results = "hidden"; eval=false
 @time polyancestry= polyOrigin(genofile,pedfile;
+    refinemap=true,
+    refineorder=false,
     isphysmap=true,
     recomrate=1.25,
     chrsubset=chrsubset,
     snpsubset=1:5:1000,
-    isparallel=true,
-    refinemap=true,
-    refineorder=false,
+    isparallel=true,    
     outstem=outstem
 )
 ```
