@@ -37,12 +37,10 @@ cd(@__DIR__)
 
 
 
-Set input files and outstem
+Set input files
 ~~~~{.julia}
 genofile = "TableS2_dose.csv"
 pedfile = "TableS3_ped.csv"
-chrsubset = 1:4
-outstem = "potato_output"
 ~~~~~~~~~~~~~
 
 
@@ -107,14 +105,20 @@ PolyOrigin.plotdesign(polygeno)
 
 run polyOrigin
 ~~~~{.julia}
+chrsubset = 1:4
+outstem = "potato_output"
+~~~~~~~~~~~~~
+
+
+~~~~{.julia}
 @time polyancestry= polyOrigin(genofile,pedfile;
-    refinemap=true,
-    refineorder=false,
     isphysmap=true,
     recomrate=1.25,
+    refinemap=true,
+    refineorder=false,
     chrsubset=chrsubset,
     snpsubset=1:5:1000,
-    isparallel=true,    
+    isparallel=true,
     outstem=outstem
 )
 ~~~~~~~~~~~~~
@@ -248,16 +252,16 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
 10×5 DataFrame
  Row │ population  parentindex  parent                 stateindex  state
 ─────┼─────────────────────────────────────────────────────────────────────
-   1 │ pop1        1|2          W6511-1R|VillettaRose           4  1-1-5-8
-   2 │ pop1        1|2          W6511-1R|VillettaRose          11  1-2-5-5
-   3 │ pop1        1|2          W6511-1R|VillettaRose          21  1-3-5-5
-   4 │ pop1        1|2          W6511-1R|VillettaRose          30  1-3-8-8
+   1 │ pop1        1|2          W6511-1R|VillettaRose          14  1-2-5-8
+   2 │ pop1        1|2          W6511-1R|VillettaRose          23  1-3-5-7
+   3 │ pop1        1|2          W6511-1R|VillettaRose          24  1-3-5-8
+   4 │ pop1        1|2          W6511-1R|VillettaRose          36  1-4-6-7
    5 │ pop1        1|2          W6511-1R|VillettaRose          41  2-2-5-5
-   6 │ pop1        1|2          W6511-1R|VillettaRose          57  2-3-6-8
-   7 │ pop1        1|2          W6511-1R|VillettaRose          85  3-4-6-6
-   8 │ pop1        1|2          W6511-1R|VillettaRose          94  4-4-5-8
-   9 │ pop1        1|2          W6511-1R|VillettaRose          96  4-4-6-7
-  10 │ pop1        1|2          W6511-1R|VillettaRose          99  4-4-7-8
+   6 │ pop1        1|2          W6511-1R|VillettaRose          45  2-2-6-6
+   7 │ pop1        1|2          W6511-1R|VillettaRose          48  2-2-7-7
+   8 │ pop1        1|2          W6511-1R|VillettaRose          50  2-2-8-8
+   9 │ pop1        1|2          W6511-1R|VillettaRose          53  2-3-5-7
+  10 │ pop1        1|2          W6511-1R|VillettaRose          60  2-3-8-8
 ~~~~
 
 
@@ -328,7 +332,7 @@ plot the relative frequences averaging overage chromosomes/parents
 plotvalentfreq(valentfreq)
 ~~~~~~~~~~~~~
 
-![](figures/tetraploid_realpotato_18_1.png)\ 
+![](figures/tetraploid_realpotato_19_1.png)\ 
 
 
 
@@ -341,7 +345,7 @@ Visualize haplotype probabilities of single offspring
 plotCondprob(polyancestry,offspring=1)
 ~~~~~~~~~~~~~
 
-![](figures/tetraploid_realpotato_19_1.png)\ 
+![](figures/tetraploid_realpotato_20_1.png)\ 
 
 
 
@@ -369,7 +373,7 @@ plotMapComp(polygeno.markermap[chrsubset],polyancestry.markermap,
 )
 ~~~~~~~~~~~~~
 
-![](figures/tetraploid_realpotato_21_1.png)\ 
+![](figures/tetraploid_realpotato_22_1.png)\ 
 
 
 

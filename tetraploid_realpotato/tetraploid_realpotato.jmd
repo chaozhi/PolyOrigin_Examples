@@ -28,12 +28,10 @@ Set working directory to the direcotry of this file.
 cd(@__DIR__)
 ```
 
-Set input files and outstem
+Set input files
 ```julia; results = "hidden";
 genofile = "TableS2_dose.csv"
 pedfile = "TableS3_ped.csv"
-chrsubset = 1:4
-outstem = "potato_output"
 ```
 
 Check input files. In the pedfile, the parents of founders are set to 0.
@@ -56,15 +54,19 @@ PolyOrigin.plotdesign(polygeno)
 # Run polyOrigin
 
 run polyOrigin
+```julia; results = "hidden";
+chrsubset = 1:4
+outstem = "potato_output"
+```
 ```julia; results = "hidden"; eval=false
 @time polyancestry= polyOrigin(genofile,pedfile;
-    refinemap=true,
-    refineorder=false,
     isphysmap=true,
     recomrate=1.25,
+    refinemap=true,
+    refineorder=false,
     chrsubset=chrsubset,
     snpsubset=1:5:1000,
-    isparallel=true,    
+    isparallel=true,
     outstem=outstem
 )
 ```

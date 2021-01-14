@@ -690,14 +690,12 @@ div.title {text-align: center;}
 
 
 
-<p>Set input files and outstem</p>
+<p>Set input files</p>
 
 
 <pre class='hljl'>
 <span class='hljl-n'>genofile</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;TableS2_dose.csv&quot;</span><span class='hljl-t'>
-</span><span class='hljl-n'>pedfile</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;TableS3_ped.csv&quot;</span><span class='hljl-t'>
-</span><span class='hljl-n'>chrsubset</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-ni'>4</span><span class='hljl-t'>
-</span><span class='hljl-n'>outstem</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;potato_output&quot;</span>
+</span><span class='hljl-n'>pedfile</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;TableS3_ped.csv&quot;</span>
 </pre>
 
 
@@ -762,14 +760,22 @@ div.title {text-align: center;}
 
 
 <pre class='hljl'>
+<span class='hljl-n'>chrsubset</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-ni'>4</span><span class='hljl-t'>
+</span><span class='hljl-n'>outstem</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;potato_output&quot;</span>
+</pre>
+
+
+
+
+<pre class='hljl'>
 <span class='hljl-nd'>@time</span><span class='hljl-t'> </span><span class='hljl-n'>polyancestry</span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>polyOrigin</span><span class='hljl-p'>(</span><span class='hljl-n'>genofile</span><span class='hljl-p'>,</span><span class='hljl-n'>pedfile</span><span class='hljl-p'>;</span><span class='hljl-t'>
-    </span><span class='hljl-n'>refinemap</span><span class='hljl-oB'>=</span><span class='hljl-kc'>true</span><span class='hljl-p'>,</span><span class='hljl-t'>
-    </span><span class='hljl-n'>refineorder</span><span class='hljl-oB'>=</span><span class='hljl-kc'>false</span><span class='hljl-p'>,</span><span class='hljl-t'>
     </span><span class='hljl-n'>isphysmap</span><span class='hljl-oB'>=</span><span class='hljl-kc'>true</span><span class='hljl-p'>,</span><span class='hljl-t'>
     </span><span class='hljl-n'>recomrate</span><span class='hljl-oB'>=</span><span class='hljl-nfB'>1.25</span><span class='hljl-p'>,</span><span class='hljl-t'>
+    </span><span class='hljl-n'>refinemap</span><span class='hljl-oB'>=</span><span class='hljl-kc'>true</span><span class='hljl-p'>,</span><span class='hljl-t'>
+    </span><span class='hljl-n'>refineorder</span><span class='hljl-oB'>=</span><span class='hljl-kc'>false</span><span class='hljl-p'>,</span><span class='hljl-t'>
     </span><span class='hljl-n'>chrsubset</span><span class='hljl-oB'>=</span><span class='hljl-n'>chrsubset</span><span class='hljl-p'>,</span><span class='hljl-t'>
     </span><span class='hljl-n'>snpsubset</span><span class='hljl-oB'>=</span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-ni'>5</span><span class='hljl-oB'>:</span><span class='hljl-ni'>1000</span><span class='hljl-p'>,</span><span class='hljl-t'>
-    </span><span class='hljl-n'>isparallel</span><span class='hljl-oB'>=</span><span class='hljl-kc'>true</span><span class='hljl-p'>,</span><span class='hljl-t'>    
+    </span><span class='hljl-n'>isparallel</span><span class='hljl-oB'>=</span><span class='hljl-kc'>true</span><span class='hljl-p'>,</span><span class='hljl-t'>
     </span><span class='hljl-n'>outstem</span><span class='hljl-oB'>=</span><span class='hljl-n'>outstem</span><span class='hljl-t'>
 </span><span class='hljl-p'>)</span>
 </pre>
@@ -897,16 +903,16 @@ itted
 10×5 DataFrame
  Row │ population  parentindex  parent                 stateindex  state
 ─────┼─────────────────────────────────────────────────────────────────────
-   1 │ pop1        1|2          W6511-1R|VillettaRose           6  1-1-6-7
-   2 │ pop1        1|2          W6511-1R|VillettaRose          14  1-2-5-8
-   3 │ pop1        1|2          W6511-1R|VillettaRose          17  1-2-6-8
-   4 │ pop1        1|2          W6511-1R|VillettaRose          38  1-4-7-7
-   5 │ pop1        1|2          W6511-1R|VillettaRose          39  1-4-7-8
-   6 │ pop1        1|2          W6511-1R|VillettaRose          43  2-2-5-7
-   7 │ pop1        1|2          W6511-1R|VillettaRose          58  2-3-7-7
-   8 │ pop1        1|2          W6511-1R|VillettaRose          61  2-4-5-5
-   9 │ pop1        1|2          W6511-1R|VillettaRose          86  3-4-6-7
-  10 │ pop1        1|2          W6511-1R|VillettaRose          93  4-4-5-7
+   1 │ pop1        1|2          W6511-1R|VillettaRose           3  1-1-5-7
+   2 │ pop1        1|2          W6511-1R|VillettaRose          10  1-1-8-8
+   3 │ pop1        1|2          W6511-1R|VillettaRose          36  1-4-6-7
+   4 │ pop1        1|2          W6511-1R|VillettaRose          44  2-2-5-8
+   5 │ pop1        1|2          W6511-1R|VillettaRose          54  2-3-5-8
+   6 │ pop1        1|2          W6511-1R|VillettaRose          58  2-3-7-7
+   7 │ pop1        1|2          W6511-1R|VillettaRose          65  2-4-6-6
+   8 │ pop1        1|2          W6511-1R|VillettaRose          77  3-3-6-8
+   9 │ pop1        1|2          W6511-1R|VillettaRose          95  4-4-6-6
+  10 │ pop1        1|2          W6511-1R|VillettaRose          99  4-4-7-8
 </pre>
 
 
