@@ -217,15 +217,15 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
    1 │          1  1|2          A|B              9  1-1-7-8
-   2 │          1  1|2          A|B             18  1-2-7-7
-   3 │          1  1|2          A|B             22  1-3-5-6
-   4 │          1  1|2          A|B             31  1-4-5-5
-   5 │          1  1|2          A|B             46  2-2-6-7
-   6 │          1  1|2          A|B             73  3-3-5-7
-   7 │          1  1|2          A|B             74  3-3-5-8
-   8 │          1  1|2          A|B             83  3-4-5-7
-   9 │          1  1|2          A|B             84  3-4-5-8
-  10 │          1  1|2          A|B             97  4-4-6-8
+   2 │          1  1|2          A|B             14  1-2-5-8
+   3 │          1  1|2          A|B             21  1-3-5-5
+   4 │          1  1|2          A|B             30  1-3-8-8
+   5 │          1  1|2          A|B             35  1-4-6-6
+   6 │          1  1|2          A|B             46  2-2-6-7
+   7 │          1  1|2          A|B             76  3-3-6-7
+   8 │          1  1|2          A|B             77  3-3-6-8
+   9 │          1  1|2          A|B             88  3-4-7-7
+  10 │          1  1|2          A|B             93  4-4-5-7
 ~~~~
 
 
@@ -297,11 +297,11 @@ where 1:2:3:4 denotes quadrivalent formation and the others for bivalent formati
 
 # Calculate estimation error probability
 
-**NOTE**
-    It works only with simulate data, since true value file does not exist
+**_NOTE_**
+    It works only with simulate data, since the truevalue file does not exist
     for real data.
 
-Read true value file used in simulating data
+Read the truevalue file used in simulating data
 ~~~~{.julia}
 truegeno = readTruegeno!(string(dataid,"_true.csv"), polyancestry)
 keys(truegeno)
@@ -345,11 +345,11 @@ where
 
 # Visualize conditional probability
 
-**NOTE**
+**_NOTE_**
     For simulate data, keep the default keyarg `truegeno=nothing`.
 
-Visualize haplotype probabilities of single offspring, marker `x` denoting
-true values. 
+Visualize haplotype probabilities of single offspring, crosses `x` denoting
+true values.
 ~~~~{.julia}
 plotCondprob(polyancestry,truegeno=truegeno,offspring=1)
 ~~~~~~~~~~~~~
