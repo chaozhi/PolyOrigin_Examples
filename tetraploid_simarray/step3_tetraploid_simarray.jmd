@@ -122,6 +122,10 @@ where 1:2:3:4 denotes quadrivalent formation and the others for bivalent formati
 
 # Calculate estimation error probability
 
+**NOTE**
+    It works only with simulate data, since true value file does not exist
+    for real data.
+
 Read true value file used in simulating data
 ```julia
 truegeno = readTruegeno!(string(dataid,"_true.csv"), polyancestry)
@@ -149,7 +153,11 @@ where
 
 # Visualize conditional probability
 
-Visualize haplotype probabilities of single offspring
+**NOTE**
+    For simulate data, keep the default keyarg `truegeno=nothing`.
+
+Visualize haplotype probabilities of single offspring, marker `x` denoting
+true values. 
 ```julia
 plotCondprob(polyancestry,truegeno=truegeno,offspring=1)
 ```
