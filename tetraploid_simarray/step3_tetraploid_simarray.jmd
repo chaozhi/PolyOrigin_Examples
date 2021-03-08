@@ -154,7 +154,7 @@ where
 # Visualize conditional probability
 
 **_NOTE_**
-    For simulate data, keep the default keyarg `truegeno=nothing`.
+    For real data without true values, keep the default keyarg `truegeno=nothing`.
 
 Visualize haplotype probabilities of single offspring, crosses `x` denoting
 true values.

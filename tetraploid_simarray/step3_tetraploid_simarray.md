@@ -216,16 +216,16 @@ show(res["ancestralgenotype"][sort(rand(1:100,10)),:],eltypes=false)
 10×5 DataFrame
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
-   1 │          1  1|2          A|B              9  1-1-7-8
-   2 │          1  1|2          A|B             14  1-2-5-8
-   3 │          1  1|2          A|B             21  1-3-5-5
-   4 │          1  1|2          A|B             30  1-3-8-8
-   5 │          1  1|2          A|B             35  1-4-6-6
-   6 │          1  1|2          A|B             46  2-2-6-7
-   7 │          1  1|2          A|B             76  3-3-6-7
-   8 │          1  1|2          A|B             77  3-3-6-8
-   9 │          1  1|2          A|B             88  3-4-7-7
-  10 │          1  1|2          A|B             93  4-4-5-7
+   1 │          1  1|2          A|B              3  1-1-5-7
+   2 │          1  1|2          A|B             12  1-2-5-6
+   3 │          1  1|2          A|B             13  1-2-5-7
+   4 │          1  1|2          A|B             19  1-2-7-8
+   5 │          1  1|2          A|B             22  1-3-5-6
+   6 │          1  1|2          A|B             53  2-3-5-7
+   7 │          1  1|2          A|B             54  2-3-5-8
+   8 │          1  1|2          A|B             58  2-3-7-7
+   9 │          1  1|2          A|B             64  2-4-5-8
+  10 │          1  1|2          A|B             80  3-3-8-8
 ~~~~
 
 
@@ -346,7 +346,7 @@ where
 # Visualize conditional probability
 
 **_NOTE_**
-    For simulate data, keep the default keyarg `truegeno=nothing`.
+    For real data without true values, keep the default keyarg `truegeno=nothing`.
 
 Visualize haplotype probabilities of single offspring, crosses `x` denoting
 true values.

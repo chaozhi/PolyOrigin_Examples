@@ -770,9 +770,8 @@ div.title {text-align: center;}
 
 
 <pre class="output">
-8-element Array&#123;String,1&#125;:
+7-element Array&#123;String,1&#125;:
  &quot;tetraploid_simarray_output.log&quot;
- &quot;tetraploid_simarray_output_condprob.gif&quot;
  &quot;tetraploid_simarray_output_genoprob.csv&quot;
  &quot;tetraploid_simarray_output_maprefined.csv&quot;
  &quot;tetraploid_simarray_output_parentphased.csv&quot;
@@ -871,16 +870,16 @@ Base.KeySet for a Dict&#123;SubString&#123;String&#125;,DataFrame&#125; with 10 
 10×5 DataFrame
  Row │ population  parentindex  parent  stateindex  state
 ─────┼──────────────────────────────────────────────────────
-   1 │          1  1|2          A|B              3  1-1-5-7
-   2 │          1  1|2          A|B              5  1-1-6-6
-   3 │          1  1|2          A|B             37  1-4-6-8
-   4 │          1  1|2          A|B             59  2-3-7-8
-   5 │          1  1|2          A|B             60  2-3-8-8
-   6 │          1  1|2          A|B             62  2-4-5-6
-   7 │          1  1|2          A|B             63  2-4-5-7
-   8 │          1  1|2          A|B             70  2-4-8-8
-   9 │          1  1|2          A|B             93  4-4-5-7
-  10 │          1  1|2          A|B             94  4-4-5-8
+   1 │          1  1|2          A|B              1  1-1-5-5
+   2 │          1  1|2          A|B             34  1-4-5-8
+   3 │          1  1|2          A|B             48  2-2-7-7
+   4 │          1  1|2          A|B             50  2-2-8-8
+   5 │          1  1|2          A|B             52  2-3-5-6
+   6 │          1  1|2          A|B             52  2-3-5-6
+   7 │          1  1|2          A|B             52  2-3-5-6
+   8 │          1  1|2          A|B             65  2-4-6-6
+   9 │          1  1|2          A|B             77  3-3-6-8
+  10 │          1  1|2          A|B             83  3-4-5-7
 </pre>
 
 
@@ -991,7 +990,7 @@ A, AxB0001, 1:2-3:4&amp;5:7-6:8|1:2-3:4&amp;5:6:7:8|1:2:3:4&amp;5:7-6:8|1:2:3:4&
 </li>
 </ul>
 <h1>Visualize conditional probability</h1>
-<p><strong><em>NOTE</em></strong>     For simulate data, keep the default keyarg <code>truegeno&#61;nothing</code>.</p>
+<p><strong><em>NOTE</em></strong>     For real data without true values, keep the default keyarg <code>truegeno&#61;nothing</code>.</p>
 <p>Visualize haplotype probabilities of single offspring, crosses <code>x</code> denoting true values.</p>
 
 
@@ -1040,7 +1039,7 @@ A, AxB0001, 1:2-3:4&amp;5:7-6:8|1:2-3:4&amp;5:6:7:8|1:2:3:4&amp;5:7-6:8|1:2:3:4&
         <div class="footer">
           <p>
             Published from <a href="step3_tetraploid_simarray.jmd">step3_tetraploid_simarray.jmd</a>
-            using <a href="http://github.com/JunoLab/Weave.jl">Weave.jl</a> v0.10.7 on 2021-03-07.
+            using <a href="http://github.com/JunoLab/Weave.jl">Weave.jl</a> v0.10.7 on 2021-03-08.
           </p>
         </div>
       </div>
